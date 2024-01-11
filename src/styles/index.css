@@ -406,6 +406,7 @@ a {
   flex-direction: column;
   gap: 4.875rem;
   align-items: center;
+  /* padding: 0 20rem; */
 }
 
 .dj-profile-pic-box {
