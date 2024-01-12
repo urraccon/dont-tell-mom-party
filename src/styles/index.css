@@ -464,6 +464,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 7.312rem;
 }
 
 .event-details {
@@ -508,10 +509,10 @@ a {
 }
 
 .pay-logos-container {
-  margin-top: 6.846rem;
+  /* margin-top: 6.846rem; */
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /* footer */
