@@ -100,7 +100,7 @@ a {
   transition: var(--transition);
 }
 
-.nav-btn-frame:active {
+.nav-btn-frame:has(.nav-btn:active) {
   background-color: var(--grey);
   transition: var(--transition);
 }
