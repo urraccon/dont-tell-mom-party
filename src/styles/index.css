@@ -386,9 +386,16 @@ a {
   /* background-color: var(--bright-red); */
 }
 
-.dj-style {
-  color: var(--bright-red);
+.hashtag {
+  background-color: var(--bright-red);
+  padding: 0.15rem 0.8rem 0.3rem;
+  font-size: 0.812rem;
+  line-height: 1.3rem;
 }
+
+/* .dj-style {
+  color: var(--bright-red);
+} */
 
 .dj-info {
   margin-top: 2.77rem;
@@ -536,7 +543,7 @@ a {
 }
 
 .very-small-text {
-  line-height: normal;
+  line-height: 0.933rem;
   font-size: 0.67rem;
 }
 
@@ -670,6 +677,6 @@ a {
 
 .author-social-link {
   font-size: 0.75rem;
-  line-height: inherit;
+  line-height: 1.088rem;
   font-weight: 600;
 }
