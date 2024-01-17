@@ -4,9 +4,9 @@
   --transition: all 400ms ease;
   --light-blue: #00deff;
   --dark-blue: #182530;
-  --grey: #626a71;
-  --light-grey-info: #9fa9b1;
-  --light-grey-styles: #a6b0b9;
+  --gray: #626a71;
+  --light-gray-info: #9fa9b1;
+  --light-gray-styles: #a6b0b9;
   --bright-red: #f92056;
   --border-red-blue-gradient: linear-gradient(
       45deg,
@@ -23,6 +23,7 @@
   --red-gradient: linear-gradient(var(--bright-red), var(--bright-red));
   --blue-gradient: linear-gradient(var(--light-blue), var(--light-blue));
   --input-border-dark-blue: #33414c;
+  --window-transition: 0.5s ease-in-out;
 }
 
 * {
@@ -76,7 +77,7 @@ a {
 
 .small-gray-text {
   line-height: 1.382rem;
-  color: var(--light-grey-info);
+  color: var(--light-gray-info);
   /* width: 20.1rem; */
   font-size: 0.813rem;
 }
@@ -129,6 +130,12 @@ a {
   font-weight: 700;
 }
 
+/* .bold-text {
+  font-size: 1.6rem;
+  line-height: 1.96rem;
+  font-weight: 700;
+} */
+
 /*image size */
 
 .logo-pic {
@@ -144,7 +151,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey);
+  background-color: var(--gray);
 }
 
 .icon {
@@ -237,7 +244,7 @@ a {
 }
 
 .nav-btn-frame:has(.nav-btn:active) {
-  background-color: var(--grey);
+  background-color: var(--gray);
   transition: var(--transition);
 }
 
@@ -714,4 +721,83 @@ a {
   font-size: 0.75rem;
   line-height: 1.088rem;
   font-weight: 600;
+}
+
+/* qr-code-window */
+
+.qr-code-window {
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* display: none; */
+  transition: var(--window-transition);
+  /* opacity: 0.8; */
+}
+
+.qr-code-pic {
+  height: 10rem;
+}
+
+.qr-code-message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.qr-code-window-content {
+  width: 47.125rem;
+  padding: 2.8rem;
+  background-color: black;
+  border: 2px solid var(--light-gray-styles);
+  border-radius: 10px;
+  transition: var(--window-transition);
+}
+
+.close-btn-frame {
+  height: 1.6rem;
+  width: 1.6rem;
+  /* background-color: var(--gray); */
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  float: right;
+}
+
+.close-btn:hover .close-btn-icon {
+  fill: var(--bright-red);
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.hidden-window .qr-code-window-content {
+  transform: scale(0.8);
+  visibility: hidden;
+}
+
+.hidden-window.qr-code-window {
+  opacity: 0.8;
+  visibility: hidden;
+  /* pointer-events: auto; */
 }

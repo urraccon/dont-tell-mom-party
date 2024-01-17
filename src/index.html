@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./styles/modern-normalize.css" />
     <script type="module" src="./js/index.js"></script>
-    <script type="module" src="./js/pay-ticket.js"></script>
+    <script type="module" src="./js/qr-code-window.js"></script>
   </head>
   <body>
     <div class="page-container">
@@ -729,6 +729,38 @@
               >@urraccon</a
             ></span
           >
+        </div>
+      </div>
+    </div>
+    <div class="qr-code-window hidden-window">
+      <div class="qr-code-window-content">
+        <button class="close-btn">
+          <div class="close-btn-frame">
+            <svg class="close-btn-icon icon">
+              <use href="./images/icons.svg#close-btn" />
+            </svg>
+          </div>
+        </button>
+        <div class="qr-code-message-content">
+          <h2 class="qr-code-message-title large-bold-text gradient-text">
+            Achizitionare bilet
+          </h2>
+          <p class="qr-code-message small-text">
+            Ne face placere sa te avem alaturi de noi la petrecerea
+            KINKALISCIOUS care se va tine in data de 27 IAN. 2024.
+            <br />Pentru a avea acces la petrecere, te rugam sa-ti asiguri locul
+            achizitionandu-ti un bilet din timp prin codul QR afisat in pagina.
+          </p>
+          <div class="qr-code-pic-container">
+            <img
+              src="./images/qr-codes/qr-code.png"
+              alt="QR Code for payment"
+              class="qr-code-pic"
+            />
+          </div>
+          <p class="qr-code-message-closing-phrase hidden">
+            Love you,<br />Dont't tell mom party
+          </p>
         </div>
       </div>
     </div>

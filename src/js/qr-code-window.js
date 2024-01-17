@@ -21,7 +21,10 @@
 //   });
 // }
 
-const purchaseTicketForm = document.querySelector('form.purchase-ticket');
+const QRCodeWindowOpeningBtn = document.querySelector('form.purchase-ticket');
+const QRCodeWindowClosingBtn = document.querySelector('button.close-btn');
+const QRCodeWindow = document.querySelector('div.qr-code-window');
+
 // const clientEmailInput = document.querySelector('input.client-email');
 // const eventNameField = document.querySelector(
 //   '.purchase-ticket .event-name .small-text'
@@ -60,13 +63,14 @@ const purchaseTicketForm = document.querySelector('form.purchase-ticket');
 // const subjectMailClient = `Plata intrare petrecere ${eventName}`;
 // const subjectMailDTMP = `Un nou participant la petrecerea ${eventName}`;
 
-purchaseTicketForm.addEventListener('submit', paymentRequest);
+QRCodeWindowOpeningBtn.addEventListener('submit', openQRCodeWindow);
 
-function paymentRequest(paymentDetails) {
+function openQRCodeWindow(openingWindow) {
   // debugger;
-  paymentDetails.preventDefault();
+  openingWindow.preventDefault();
+  QRCodeWindow.classList.remove('hidden-window');
   // windows
-  window.open('https://epl.ro/q/NTB22qgyeYtRpArUP9He6V-ko*Of-Ko=');
+  // window.open('https://epl.ro/q/NTB22qgyeYtRpArUP9He6V-ko*Of-Ko=');
   // console.dir(paymentDetails);
   // const clientEmail = paymentDetails.target[0].value;
   // console.log(clientEmail);
@@ -79,4 +83,11 @@ function paymentRequest(paymentDetails) {
   // Love you,
   // Don't tell mom party Team`;
   // createMail(DTMPEmail, messageMailDTMP, subjectMailDTMP);
+}
+
+QRCodeWindowClosingBtn.addEventListener('click', closeQRCodeWindow);
+
+function closeQRCodeWindow(closingWindow) {
+  // closingWindow.preventDefault();
+  QRCodeWindow.classList.add('hidden-window');
 }
