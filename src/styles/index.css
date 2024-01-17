@@ -763,6 +763,7 @@ a {
   border: 2px solid var(--light-gray-styles);
   border-radius: 10px;
   transition: var(--window-transition);
+  position: relative;
 }
 
 .close-btn-frame {
@@ -780,24 +781,31 @@ a {
 .close-btn {
   border: none;
   background-color: transparent;
-  float: right;
+  /* float: right; */
+  position: absolute;
+  top: 2.8rem;
+  right: 2.8rem;
 }
 
-.close-btn:hover .close-btn-icon {
+.close-btn-frame:hover .close-btn-icon {
   fill: var(--bright-red);
 }
 
-.close-btn:hover {
+.close-btn-frame:hover {
   cursor: pointer;
 }
 
+.close-btn-frame:hover {
+  border-color: var(--bright-red);
+}
+
 .hidden-window .qr-code-window-content {
-  transform: scale(0.8);
+  transform: scale(0.9);
   visibility: hidden;
 }
 
 .hidden-window.qr-code-window {
-  opacity: 0.8;
+  opacity: 0.9;
   visibility: hidden;
   /* pointer-events: auto; */
 }
