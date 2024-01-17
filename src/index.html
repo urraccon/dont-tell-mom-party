@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./styles/modern-normalize.css" />
     <script type="module" src="./js/index.js"></script>
-    <!-- <script type="module" src="./js/send-mail.js"></script> -->
+    <script type="module" src="./js/pay-ticket.js"></script>
   </head>
   <body>
     <div class="page-container">
@@ -531,7 +531,6 @@
                       name="email"
                       class="client-email small-text field"
                       placeholder="E-mail"
-                      required
                     />
                     <input
                       type="tel"
@@ -610,9 +609,11 @@
                       </a>
                     </div>
                   </div>
-                  <button class="pay-btn btn-text" type="submit">
-                    Achizitioneaza bilet
-                  </button>
+                  <div class="pay-btn-container">
+                    <button class="pay-btn btn-text" type="submit">
+                      Achizitioneaza bilet
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>

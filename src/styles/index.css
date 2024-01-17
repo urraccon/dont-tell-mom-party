@@ -535,6 +535,10 @@ a {
   gap: 1.22rem;
 }
 
+/* .pay-btn-container {
+  width: fit-content;
+} */
+
 .pay-btn {
   /* display: block; */
   background: transparent;
@@ -550,6 +554,7 @@ a {
   /* border-image: var(--red-blue-gradient); */
   border-color: var(--light-blue);
   /* width: 32.188rem; */
+  width: 100%;
 }
 
 .pay-btn:hover {
