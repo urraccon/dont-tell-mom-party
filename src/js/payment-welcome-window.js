@@ -21,9 +21,17 @@
 //   });
 // }
 
-const QRCodeWindowOpeningBtn = document.querySelector('form.purchase-ticket');
-const QRCodeWindowClosingBtn = document.querySelector('button.close-btn');
-const QRCodeWindow = document.querySelector('div.qr-code-window');
+const paymentWelcomeWindowOpeningBtn = document.querySelector(
+  'form.purchase-ticket'
+);
+const paymentWelcomeWindowClosingBtn =
+  document.querySelector('button.close-btn');
+const paymentWelcomeWindow = document.querySelector(
+  'div.payment-welcome-window'
+);
+const paymentPlatformBtn = document.querySelector(
+  'button.payment-platform-btn'
+);
 
 // const clientEmailInput = document.querySelector('input.client-email');
 // const eventNameField = document.querySelector(
@@ -63,12 +71,15 @@ const QRCodeWindow = document.querySelector('div.qr-code-window');
 // const subjectMailClient = `Plata intrare petrecere ${eventName}`;
 // const subjectMailDTMP = `Un nou participant la petrecerea ${eventName}`;
 
-QRCodeWindowOpeningBtn.addEventListener('submit', openQRCodeWindow);
+paymentWelcomeWindowOpeningBtn.addEventListener(
+  'submit',
+  openPaymentWelcomeWindow
+);
 
-function openQRCodeWindow(openingWindow) {
+function openPaymentWelcomeWindow(openingWindow) {
   // debugger;
   openingWindow.preventDefault();
-  QRCodeWindow.classList.remove('hidden-window');
+  paymentWelcomeWindow.classList.remove('hidden-window');
   // windows
   // window.open('https://epl.ro/q/NTB22qgyeYtRpArUP9He6V-ko*Of-Ko=');
   // console.dir(paymentDetails);
@@ -85,9 +96,19 @@ function openQRCodeWindow(openingWindow) {
   // createMail(DTMPEmail, messageMailDTMP, subjectMailDTMP);
 }
 
-QRCodeWindowClosingBtn.addEventListener('click', closeQRCodeWindow);
+paymentWelcomeWindowClosingBtn.addEventListener(
+  'click',
+  closePaymentWelcomeWindow
+);
 
-function closeQRCodeWindow(closingWindow) {
+function closePaymentWelcomeWindow(closingWindow) {
   // closingWindow.preventDefault();
-  QRCodeWindow.classList.add('hidden-window');
+  paymentWelcomeWindow.classList.add('hidden-window');
+}
+
+paymentPlatformBtn.addEventListener('click', openPaymentPlatform);
+
+function openPaymentPlatform(accessLink) {
+  accessLink.preventDefault();
+  window.open('https://epl.ro/q/NTB22qgyeYtRpArUP9He6V-ko*Of-Ko=');
 }

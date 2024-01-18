@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./styles/modern-normalize.css" />
     <script type="module" src="./js/index.js"></script>
-    <script type="module" src="./js/qr-code-window.js"></script>
+    <script type="module" src="./js/payment-welcome-window.js"></script>
   </head>
   <body>
     <div class="page-container">
@@ -619,7 +619,7 @@
                     </div>
                     <div class="pay-btn-container">
                       <button class="pay-btn btn-text" type="submit">
-                        Achizitioneaza bilet
+                        Cumpara bilet
                       </button>
                     </div>
                   </div>
@@ -741,8 +741,8 @@
         </div>
       </div>
     </div>
-    <div class="qr-code-window hidden-window">
-      <div class="qr-code-window-content">
+    <div class="payment-welcome-window hidden-window">
+      <div class="payment-welcome-window-content">
         <button class="close-btn">
           <div class="close-btn-frame">
             <svg class="close-btn-icon icon">
@@ -750,26 +750,35 @@
             </svg>
           </div>
         </button>
-        <div class="qr-code-message-content">
-          <h2 class="qr-code-message-title large-bold-text gradient-text">
-            Achizitionare bilet
+        <div class="payment-welcome-message-content">
+          <h2
+            class="payment-welcome-message-title large-bold-text gradient-text"
+          >
+            Mai ai un pas ...
           </h2>
-          <p class="qr-code-message small-text">
-            Ne face placere sa te avem alaturi de noi la petrecerea
-            KINKALISCIOUS care se va tine in data de 27 IAN. 2024.
-            <br />Pentru a avea acces la petrecere, te rugam sa-ti asiguri locul
-            achizitionandu-ti un bilet din timp prin codul QR afisat in pagina.
+          <p class="payment-welcome-message small-text">
+            Stii ce ne ipseste pentru a aduce experienta petrecerilor din Berlin
+            la petrecerea KINKALISCIOUS din data de 27 IAN. 2024?<br /><br /><span
+              class="bold-text"
+              >Tu</span
+            >
+            ne lipsesti, asa ca apasa pe logoul DTMP de mai jos si
+            asiguratiaccesul la una din cele mai epice petreceri queere. (Don't
+            worry about your access QR Code. Va ajunge la tine pana la finalul
+            zilei.)
           </p>
-          <div class="qr-code-pic-container">
-            <img
-              src="./images/qr-codes/qr-code.png"
-              alt="QR Code for payment"
-              class="qr-code-pic"
-            />
+          <div class="payment-platform">
+            <button class="payment-platform-btn" type="button">
+              <img
+                src="./images/logos/DTMP-logo.png"
+                alt="DTMP logo"
+                class="logo-pic"
+              />
+            </button>
           </div>
-          <p class="qr-code-message-closing-phrase hidden">
+          <!-- <p class="pay-message-closing-phrase hidden">
             Love you,<br />Dont't tell mom party
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
