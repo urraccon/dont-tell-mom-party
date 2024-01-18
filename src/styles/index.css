@@ -852,46 +852,90 @@ a {
 
 /* tablet version */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  * {
+    font-size: 0.8rem;
+    line-height: 1.28rem;
+  }
+
   .large-text,
   .large-bold-text,
   .extra-large-text {
     text-align: center;
   }
+
   .section-title {
-    width: 25rem;
-    /* text-align: center; */
+    width: 27rem;
+    text-align: center;
   }
+
   .sections {
     padding: 2rem;
   }
+
   .event-container {
     justify-content: center;
-    max-width: 25rem;
+    max-width: 26rem;
+    height: 53.94rem;
+    align-content: center;
+    /* gap: 0; */
   }
+
+  .event-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* height: 100%; */
+    gap: 1.5rem;
+  }
+
+  .event {
+    height: 100%;
+  }
+
   .right-side-event-card {
     margin-left: 0;
     margin-bottom: 0;
     margin-top: 2.54rem;
     width: 100%;
   }
+
   .event-name-box {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .event-numb {
     padding: 0.4rem;
   }
+
+  /* .dj {
+    display: flex;
+    justify-content: center;
+  } */
+
+  .dj-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
   .dj-card {
-    max-width: 30rem;
+    max-width: 26rem;
+    height: 56.29rem;
+    display: flex;
+    justify-content: center;
   }
+
   .purchase-details {
-    max-width: 30rem;
+    max-width: 35rem;
   }
-  .payment-methods-banner {
+
+  /* .payment-methods-banner {
     height: 2rem;
-  }
+  } */
   /* .dj-info {
     max-width: 100%;
   } */
@@ -902,17 +946,43 @@ a {
 
 /* mobile version */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
+  /* .nav-bar-logo-container {
+    scale: 0.8;
+  }
+
+  .nav-btns-container {
+    scale: 0.8;
+  }
+
+  .social-links {
+    scale: 0.8;
+  } */
+
+  * {
+    font-size: 0.7rem;
+    line-height: 1.12rem;
+  }
+
   .section-title {
-    width: 20rem;
+    width: 29rem;
   }
-  .event-container {
+
+  /* .event-container {
     width: 100%;
-  }
-  .right-side-event-card {
+  } */
+
+  /* .right-side-event-card {
     width: 100%;
-  }
-  .payment-methods-banner {
+  } */
+
+  /* .payment-methods-banner {
     height: 1.7rem;
+  } */
+  /* .nav-bar-section {
+    height: min-content;
   }
+  .nav-bar-container {
+    scale: 0.8;
+  } */
 }
