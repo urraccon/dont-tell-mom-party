@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("form.purchase-ticket"),t=document.querySelector("button.close-btn"),n=document.querySelector("div.payment-welcome-window"),o=document.querySelector("button.payment-platform-btn");e.addEventListener("submit",(function(e){e.preventDefault(),n.classList.remove("hidden-window")})),t.addEventListener("click",(function(e){n.classList.add("hidden-window")})),o.addEventListener("click",(function(e){e.preventDefault(),window.open("https://epl.ro/q/NTB22qgyeYtRpArUP9He6V-ko*Of-Ko=")}))}();
+//# sourceMappingURL=index.e87ff3c1.js.map
