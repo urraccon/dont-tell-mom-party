@@ -61,7 +61,7 @@ a {
   text-transform: uppercase;
 }
 
-.very-large-text {
+.extra-large-text {
   font-size: 6.15rem;
   /* border-bottom-width: 0.25rem; */
   /* border-bottom-style: solid;
@@ -115,7 +115,7 @@ a {
   text-transform: uppercase;
 }
 
-.very-small-text {
+.extra-small-text {
   line-height: 0.933rem;
   font-size: 0.67rem;
 }
@@ -131,10 +131,15 @@ a {
   font-weight: 700;
 }
 
-.bold-text {
+.normal-bold-text {
   font-size: 1.6rem;
   line-height: 1.96rem;
   font-weight: 700;
+}
+
+.normal-text {
+  font-size: 1.6rem;
+  line-height: 1-96rem;
 }
 
 /*image size */
@@ -850,7 +855,7 @@ a {
 @media screen and (max-width: 768px) {
   .large-text,
   .large-bold-text,
-  .very-large-text {
+  .extra-large-text {
     text-align: center;
   }
   .section-title {
