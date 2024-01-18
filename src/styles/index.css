@@ -6,7 +6,7 @@
   --dark-blue: #182530;
   --gray: #626a71;
   --light-gray-info: #9fa9b1;
-  --light-gray-styles: #a6b0b9;
+  --light-gray-window-frame: #a6b0b9;
   --bright-red: #f92056;
   --border-red-blue-gradient: linear-gradient(
       45deg,
@@ -777,7 +777,7 @@ a {
   width: 47.125rem;
   padding: 2.8rem;
   background-color: black;
-  border: 2px solid var(--light-gray-styles);
+  border: 2px solid var(--light-gray-window-frame);
   border-radius: 10px;
   transition: var(--window-transition);
   position: relative;
